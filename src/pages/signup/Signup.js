@@ -8,8 +8,16 @@ export default function Signup() {
   const [password, setPassword] = useState('')
   const [displayName, setDisplayName] = useState('')
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log(email, password, displayName)
+  }
+
   return (
-    <form className={styles['signup-form']}>
+    <form
+      className={styles['signup-form']}
+      onSubmit={handleSubmit}
+    >
       <h2>Signup</h2>
       <label>
         <span>Email:</span>

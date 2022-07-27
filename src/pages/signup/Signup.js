@@ -15,18 +15,24 @@ export default function Signup() {
         <span>Email:</span>
         <input
           type='email'
+          onChange={(e) => setEmail(e.target.value)}
+          value={email}
         />
       </label>
       <label>
         <span>Password:</span>
         <input
           type='password'
+          onChange={(e) => setPassword(e.target.value)}
+          value={password}
         />
       </label>
       <label>
         <span>Display Name:</span>
         <input
           type='text'
+          onChange={(e) => setDisplayName(e.target.value)}
+          value={displayName}
         />
       </label>
       <button className='btn'>Signup</button>

@@ -48,7 +48,7 @@ export default function Signup() {
       </label>
       {!isPending && <button className='btn'>Signup</button>}
       {isPending && <button className='btn' disabled>Loading</button>}
-      {error && <p>{error}</p>}
+      {error && <p className='error'>{error}</p>}
     </form>
   )
 }

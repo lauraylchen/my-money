@@ -3,14 +3,21 @@
   grid-template-columns: 2fr 1fr;
   max-width: 960px;
   margin: 60px auto;
+  padding: 0 30px;
 }
 
-.content {
-  padding-right: 30px;
-}
+@media (max-width: 991.98px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
 
-.sidebar {
-  padding-left: 30px;
+  .sidebar{
+    order: 1;
+  }
+
+  .content {
+    order: 2;
+  }
 }
 
 .sidebar form {

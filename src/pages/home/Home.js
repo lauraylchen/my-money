@@ -16,7 +16,7 @@ export default function Home() {
     <div className={styles.container}>
       <div className={styles.content}>
         {error && <p>{error}</p>}
-        {documents && <TransactionList transaction={documents} />}
+        {documents && <TransactionList transactions={documents} />}
       </div>
       <div className={styles.sidebar}>
         <TransactionForm uid={user.uid} />
